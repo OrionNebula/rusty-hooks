@@ -16,7 +16,7 @@ noConfigFileExitCode={{NO_CONFIG_FILE_EXIT_CODE}}
 upgradeRustyHooksCli() {
   echo "[rusty-hooks] Upgrading rusty-hook cli..."
   echo "[rusty-hooks] This may take a few seconds..."
-  cargo install --force rusty-hook >/dev/null 2>&1
+  cargo install --force rusty-hooks >/dev/null 2>&1
 }
 
 installRustyHooksCli() {
@@ -51,7 +51,7 @@ handleRustyHooksCliResult() {
       echo "[rusty-hooks] See https://github.com/kaimast/rusty-hooks#configure for more information about configuring rusty-hooks"
       echo
       echo "[rusty-hooks] If you were trying to remove rusty-hooks, then you should also delete the git hook files to remove this warning"
-      echo "[rusty-hooks] See https://github.com/kaimast/rusty-hooks#removing-rusty-hooks for more information about removing rusty-hook from your project"
+      echo "[rusty-hooks] See https://github.com/kaimast/rusty-hooks#removing-rusty-hooks for more information about removing rusty-hooks from your project"
       echo
     fi
     exit 0

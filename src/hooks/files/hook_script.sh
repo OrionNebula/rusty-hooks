@@ -10,9 +10,9 @@ gitParams="$*"
 
 if ! command -v rusty-hooks >/dev/null 2>&1; then
   if [ -z "${RUSTY_HOOKS_SKIP_AUTO_INSTALL}" ]; then
-    installRustyHookCli
+    installRustyHooksCli
   else
-    echo "[rusty-hooks] rusty-hook is not installed, and auto install is disabled"
+    echo "[rusty-hooks] rusty-hooks is not installed, and auto install is disabled"
     echo "[rusty-hooks] skipping ${hookName} hook"
     echo "[rusty-hooks] You can reinstall it using 'cargo install rusty-hooks' or delete this hook"
     exit 0
